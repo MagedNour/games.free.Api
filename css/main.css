@@ -1,0 +1,131 @@
+body {
+    font-family: cursive;
+    background-color: #272b30;
+}
+
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+nav .navbar-brand img {
+    max-width: 40px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #3B497B;
+}
+
+.navbar-brand a {
+    font-size: 20px;
+    font-weight: 500 !important;
+}
+
+.navbar-nav a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.nav-link {
+    transition: all 0.4s;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(0, 153, 204);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: rgb(0, 153, 204);
+}
+
+.nav-holder{
+    position: sticky;
+    top: 30px;
+    z-index: 999;
+    transform: translate(0,-40px);
+}
+
+.gamebox{
+    cursor: pointer;
+    transition: all 0.5s;
+    filter: grayscale(0.7);
+}
+
+.gamebox:hover{
+    transform: scale(1.07, 1.07);
+    filter: grayscale(0);
+}
+
+.badge-color{
+    background-color: #32383e;
+}
+
+.loadingScreen{
+    z-index: 999999;
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.loader {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  .dis-flex{
+    display: flex;
+  }
+
+  .details{
+    background-color: #272b30;
+
+  }
+
+  .closeDetailsBtn i{
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 20%;
+    padding: 5px;
+  }
+  .closeDetailsBtn i:hover{
+    opacity: 1 !important;
+    border-color: white;
+  }
+
+
+
+
+  .det-head h1{
+    font-size: 28px;
+  }

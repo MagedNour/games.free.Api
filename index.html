@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games-Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <main id="main" class="">
+        <header>
+            <img src="./imgs/wraper.png" alt="header-image" class="w-100">
+        </header>
+        <div class="nav-holder"></div>
+        <div class="container mt-3">
+            <div class="home-content row gy-3"></div>
+        </div>
+    </main>
+
+    <section class="loadingScreen position-fixed top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+        <span class="loader"></span>
+    </section>
+
+    <section class="details position-fixed top-0 start-0 end-0 bottom-0 py-5 d-none">
+        <div class="container" id="details-container">
+            <div class="det-head d-flex justify-content-between text-white">
+                <h1 class="">Details Game</h1>
+                <span class="closeDetailsBtn">
+                    <i class="fa-solid fa-xmark opacity-50 fa-2x"></i>
+                </span>
+        </div>
+
+        <div class="row text-white">
+            <div class="col-md-4 mb-4">
+                    <img src="${res.thumbnail}" class="w-100" alt="image details">
+            </div>
+
+            <div class="col-md-8">
+                <h3>Title: ${res.title}</h3>
+
+                <p>
+                    Category:
+                    <span class="badge text-bg-info cat">${res.genre}</span>
+                </p>
+
+                <p>
+                    Platform:
+                    <span class="badge text-bg-info platform">${res.platform}</span>
+                </p>
+
+                <p>
+                    Status:
+                    <span class="badge text-bg-info status">${res.status}</span>
+                </p>
+
+                <p class="small">${res.description}</p>
+
+                <a href="${res.freetogame_profile_url}" class="btn btn-outline-warning text-white" target="_blank">Show Game</a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <img src="https://www.freetogame.com/g/452/Call-of-Duty-Warzone-1.jpg" alt="screenshot" class="w-100">
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <script src="./JavaScript/jquery-3.7.1.min.js"></script>
+    <script src="./JavaScript/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript/index.js" type="module"></script>
+</body>
+
+</html>
