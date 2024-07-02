@@ -137,7 +137,7 @@ export default class UI {
             </div>
         </div>
 
-        <div class="row mt-5">
+        <div class="row mt-5 gy-3">
              ${screenshots}
         </div>
         `
