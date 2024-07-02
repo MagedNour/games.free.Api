@@ -141,9 +141,9 @@ export default class UI {
              ${screenshots}
         </div>
         `
-
         this.detailsContainer.innerHTML = details
         this.addCloseDetailsEvent()
+        $(".loadingScreen").fadeOut(500);
     }
 
     addCloseDetailsEvent() {
@@ -167,6 +167,7 @@ export default class UI {
                 this.detailsPage.classList.remove("d-none")
                 this.main.classList.add("d-none")
                 details.getDetails(id)
+                $(".loadingScreen").fadeIn(500)
             })
         })
 
